@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Count the number of packages installed on Arch Linux
+
+fanspeed=$(sensors | grep -i fan | cut -f3 -d" ")
+
+echo "💨: $fanspeed"
+
+
+
+

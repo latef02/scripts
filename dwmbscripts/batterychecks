@@ -1,0 +1,21 @@
+#!/bin/bash
+
+battery_path="/sys/class/power_supply/BAT0"
+
+check_battery() {
+    if [ -d "$battery_path" ]; then
+        return 0
+    else
+        return 1
+    fi
+}
+
+get_battery_capacity() {
+    capacity=$(cat "$battery_path/capacity")
+    echo "🔋: $capacity%"
+}
+
+if check_battery; then
+    get_battery_capacity
+fi
+

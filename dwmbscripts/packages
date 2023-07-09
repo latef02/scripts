@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Count the number of packages installed on Arch Linux
+
+package_count=$(pacman -Q | wc -l)
+
+echo "📦: $package_count"
+
+
+
+
+
+
+

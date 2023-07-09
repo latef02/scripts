@@ -1,0 +1,3 @@
+#!/bin/bash
+current_date_time=$(date "+%a %d  %b %Y  %I:%M%p")
+echo "⏰: $current_date_time"

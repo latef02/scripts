@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Count the number of packages installed on Arch Linux
+
+updat=$(checkupdates | wc -l )
+
+echo "⬆: $updat"
+
+

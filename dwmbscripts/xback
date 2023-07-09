@@ -1,0 +1,4 @@
+#!/bin/bash
+
+xba=$(xbacklight -get)
+echo 💡:"$xba"
