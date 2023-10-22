@@ -24,8 +24,6 @@ menu() {
   printf "1. Dance wave\n"
   printf "2. Radio discount\n"
   printf "3. Lofi radio\n"
-  printf "4. Tamer Hosny\n"
-  printf "5. Tamer Ashour\n"
   printf "6. house Music\n"
   printf "7. Mozart Classical radio\n"
   printf "8. Jazz Music\n"
@@ -61,7 +59,7 @@ case $choice in
     ;;
   1)
     start_radio 'Dance wave' ;
-    alacritty mpv "https://zeno.fm/radio/dance-wave/" &
+     mpv "https://zeno.fm/radio/dance-wave/" &
     return
    ;;
   2)
