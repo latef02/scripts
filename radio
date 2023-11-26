@@ -29,10 +29,10 @@ menu() {
   printf "8. Jazz Music\n"
   printf "9. amr diab\n"
   printf "10. Lofi Radio\n"
-#  printf "11. HipHop49\n"
-#  printf "12. Madhouse Country Radio\n"
-#  printf "13. PopMusic\n"
-#  printf "14. PopStars\n"
+  printf "11. Nancy Ajram\n"
+  printf "12. Fayrouz\n"
+  printf "13. Music snoopy\n"
+  printf "14. Al7Aan\n"
 #  printf "15. RadioMetal\n"
 #  printf "16. RocknRoll Radio"
 }
@@ -72,16 +72,16 @@ case $choice in
     mpv "https://zeno.fm/radio/lofi-hip-hop-radio/" &
     return
    ;;
-  4)
-    start_radio 'Tamer Hosny' ;
-    mpv "https://zeno.fm/radio/tamer-hosny/" &
-    return
-   ;;
-  5)
-    start_radio 'Tamer Ashour' ;
-    mpv "https://zeno.fm/radio/tamerashour/" &
-    return
-   ;;
+#  4)
+#    start_radio 'Tamer Hosny' ;
+#   mpv "https://zeno.fm/radio/tamer-hosny/" &
+#    return
+#   ;;
+#  5)
+#    start_radio 'Tamer Ashour' ;
+#    mpv "https://zeno.fm/radio/tamerashour/" &
+#    return
+#   ;;
   6)
     start_radio 'House Music' ;
     mpv "https://zeno.fm/radio/radio-house-music/" &
@@ -107,30 +107,26 @@ case $choice in
     mpv "https://zeno.fm/radio/lofi-hip-hop-radio/" &
     return
     ;;
-#  11)
-#    pkill -f http ||echo "mpv not running."
-#    start_radio 'HipHop49' ;
-#    mpv "https://zeno.fm/radio/hiphop49/"
-#    return
-#    ;;
-#  12)
-#    pkill -f http ||echo "mpv not running."
-#    start_radio 'Madhouse Country Radio' ;
-#    mpv "https://zeno.fm/radio/madhouse-country-radio/"
-#    return
-#    ;;
-#  13)
-#    pkill -f http ||echo "mpv not running."
-#    start_radio 'PopMusic ' ;
-#    mpv "https://zeno.fm/radio/popmusic74vyurvmug0uv/"
-#    return
-#    ;;
-#  14)
-#    pkill -f http ||echo "mpv not running."
-#    start_radio 'PopStars' ;
-#    mpv "https://zeno.fm/radio/popstars/"
-#    return
-#    ;;
+  11)
+    start_radio 'Nancy ajram' ;
+    mpv "https://zeno.fm/radio/nancy-ajram-radio/" &
+    return
+    ;;
+  12)
+    start_radio 'fayrouz' ;
+    mpv "https://zeno.fm/radio/Fairouziat/" &
+    return
+    ;;
+  13)
+    start_radio 'Music Snoopy' ;
+    mpv "https://zeno.fm/radio/music-snoopi/" &
+    return
+    ;;
+  14)
+    start_radio 'Al7aan' ;
+    mpv "https://zeno.fm/radio/alhaan/" &
+    return
+    ;;
 #  15)
 #    pkill -f http ||echo "mpv not running."
 #    start_radio 'RadioMetal' ;
