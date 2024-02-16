@@ -1,0 +1,24 @@
+main(){
+  cmd="$(grep '^function' "$0"|grep -v "function main"|awk '{print $2}'|cut -d\( -f1|fzf --prompt "Please Make a Selection")"
+  $cmd
+  exit 0
+}
+
+function EXIT(){
+  echo "Good Bye..."
+  exit
+}
+
+function Hello(){
+  echo "Hello World"
+  echo "Good Job"
+}
+
+function Count(){
+  seq 1 100|while read n;do
+    echo -n "$n,"
+    sleep .01
+  done
+}
+
+main

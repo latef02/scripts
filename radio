@@ -55,19 +55,23 @@ case $choice in
   "Quit")
     end_radio ;
     pkill -f http
+    killall mpv;
     exit
     ;;
   1)
+    pkill -f http ||echo "mpv not running."
     start_radio 'Dance wave' ;
      mpv "https://zeno.fm/radio/dance-wave/" &
     return
    ;;
   2)
+    pkill -f http ||echo "mpv not running."
     start_radio 'Radio Discount Tv' ;
     mpv "https://zeno.fm/radio/radiodiscount/" &
     return
    ;;
   3)
+    pkill -f http ||echo "mpv not running."
     start_radio 'Lofi radio' ;
     mpv "https://zeno.fm/radio/lofi-hip-hop-radio/" &
     return
@@ -83,46 +87,56 @@ case $choice in
 #    return
 #   ;;
   6)
+    pkill -f http ||echo "mpv not running."
     start_radio 'House Music' ;
     mpv "https://zeno.fm/radio/radio-house-music/" &
     return
    ;;
   7)
+    pkill -f http ||echo "mpv not running."
     start_radio 'Classical Mozart radio' ; 
     mpv "https://zeno.fm/radio/mozart/" &
     return
    ;;
   8)
+    pkill -f http ||echo "mpv not running."
     start_radio 'Deep jazz Music' ;
     mpv "https://zeno.fm/radio/jazz-radio-bcn/" &
     return
    ;;
   9)
+    pkill -f http ||echo "mpv not running."
     start_radio 'Amr diab' ;
     mpv "https://zeno.fm/radio/AMRDIABFM/" &
     return
     ;;
   10)
+    pkill -f http ||echo "mpv not running."
     start_radio 'lofi Radio' ;
     mpv "https://zeno.fm/radio/lofi-hip-hop-radio/" &
     return
     ;;
   11)
+    pkill -f http ||echo "mpv not running."
     start_radio 'Nancy ajram' ;
     mpv "https://zeno.fm/radio/nancy-ajram-radio/" &
     return
     ;;
   12)
+    pkill -f http ||echo "mpv not running."
     start_radio 'fayrouz' ;
     mpv "https://zeno.fm/radio/Fairouziat/" &
     return
     ;;
   13)
+    pkill -f http ||echo "mpv not running."
     start_radio 'Music Snoopy' ;
     mpv "https://zeno.fm/radio/music-snoopi/" &
     return
     ;;
   14)
+	 
+    pkill -f http ||echo "mpv not running."
     start_radio 'Al7aan' ;
     mpv "https://zeno.fm/radio/alhaan/" &
     return
