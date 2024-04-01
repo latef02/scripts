@@ -1,0 +1,13 @@
+#!/bin/sh
+
+pactl set-sink-volume 0 +10%  # Increase volume by 10%
+pactl set-sink-volume 0 -10%  # Decrease volume by 10%
+
+# (Optional) Display notification (requires 'notify-send' package)
+# Uncomment the following lines if you want volume notifications
+VOLUME_INFO=$(pactl get-sink-volume 0 | grep -Eo '[0-9]+%')
+if [[ $1 == "-inc" ]]; then
+  notify-send "Volume Up  ($VOLUME_INFO)"
+else
+  notify-send "Volume Down  ($VOLUME_INFO)"
+fi
