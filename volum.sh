@@ -3,8 +3,8 @@ arg=$1
 [ $arg = "Up"   ] && pactl set-sink-volume 0 +10%
 [ $arg = "Down" ] && pactl set-sink-volume 0 -10%
 
-get_vol=$(vol -get); \
-dunstify "Volume: "$get_vol -t 1000 -r 1
+get_vol=$(vol); \
+dunstify  "Volume: "$get_vol -t 1000 -r 1
 
 
 
