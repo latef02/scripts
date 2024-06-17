@@ -1,0 +1,4 @@
+#!/bin/bash
+
+batkit=$(pactl list | grep -i bluetooth.battery | cut -f3 -d" ")
+echo "🎧:$batkit"
