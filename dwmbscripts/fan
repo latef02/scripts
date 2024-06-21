@@ -4,7 +4,7 @@
 
 fanspeed=$(sensors | grep -i fan | cut -f3 -d" ")
 
-echo "🌪️: $fanspeed"
+echo "💨: $fanspeed"
 
 
 

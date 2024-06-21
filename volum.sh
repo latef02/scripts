@@ -1,7 +1,7 @@
 #!/bin/sh
 arg=$1
-[ $arg = "Up"   ] && pactl set-sink-volume 0 +10%
-[ $arg = "Down" ] && pactl set-sink-volume 0 -10%
+[ $arg = "Up"   ] && pactl set-sink-volume 0 +5%
+[ $arg = "Down" ] && pactl set-sink-volume 0 -5%
 
 get_vol=$(vol); \
 dunstify  "Volume: "$get_vol -t 1000 -r 1

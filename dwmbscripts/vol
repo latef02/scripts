@@ -3,9 +3,9 @@ vol=$(pamixer --get-volume)
 mute=$(pamixer --get-mute)
 if [ $mute == true ]
 then
-    echo 🔇 :"$vol"
+    echo 🔇:"$vol"
 else
-    echo 🔊 :"$vol"
+    echo 🔊:"$vol"
 fi
 
 

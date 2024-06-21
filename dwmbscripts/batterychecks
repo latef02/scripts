@@ -12,7 +12,7 @@ check_battery() {
 
 get_battery_capacity() {
     capacity=$(cat "$battery_path/capacity")
-    echo "🔋: $capacity%"
+    echo "🔋:$capacity%"
 }
 
 if check_battery; then
