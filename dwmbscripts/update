@@ -2,7 +2,9 @@
 
 # Count the number of packages installed on Arch Linux
 
-updat=$(checkupdates | wc -l )
+#updat=$(checkupdates | wc -l )
+
+updat=$(sudo pacman -Qu | wc -l)
 
 echo "⬆: $updat"
 

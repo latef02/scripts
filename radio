@@ -33,7 +33,7 @@ menu() {
   printf "12. Fayrouz\n"
   printf "13. Music snoopy\n"
   printf "14. Al7Aan\n"
-#  printf "15. RadioMetal\n"
+  printf "15. Yan Radio\n"
 #  printf "16. RocknRoll Radio"
 }
 
@@ -141,12 +141,12 @@ case $choice in
     mpv "https://zeno.fm/radio/alhaan/" &
     return
     ;;
-#  15)
-#    pkill -f http ||echo "mpv not running."
-#    start_radio 'RadioMetal' ;
-#    mpv "https://zeno.fm/radio/radio-metal/"
-#    return
-#    ;;
+  15)
+    pkill -f http ||echo "mpv not running."
+    start_radio 'Yan Radio' ;
+    mpv "https://worldradiomap.com/ma/play/yanplus"
+    return
+    ;;
 #  16)
 #    pkill -f http ||echo "mpv not running."
 #    start_radio 'RocknRoll Radio' ;
