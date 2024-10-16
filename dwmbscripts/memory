@@ -1,3 +1,9 @@
 #!/bin/sh
 
-free --mebi | sed -n '2{p;q}' | awk '{printf ("💾:%2.2fGiB", ( $3 / 1024), ($2 / 1024))}'
+#free --mebi | sed -n '2{p;q}' | awk '{printf ("💾:%2.2fGiB", ( $3 / 1024), ($2 / 1024))}'
+
+
+
+
+free -h | awk '/^Mem:/ {print "💾:"  $3 "/" $2}'
+
