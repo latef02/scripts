@@ -1,0 +1,13 @@
+#!/bin/bash
+notify-send "script battery is runing"
+while true
+do
+	BATTINFO=`acpi -b`
+	if [[ `echo $BATTINFO | grep Discharging` && `echo $BATTINFO | cut -f 5 -d " "` < 20% ]] ; then
+    		DISPLAY=:0.0 /usr/bin/notify-send "low battery" "$BATTINFO"
+
+	
+	fi
+        sleep 300 # 300 seconds or 5 minutes
+done
+
