@@ -4,7 +4,7 @@ arg=$1
 [ $arg = "Down" ] && pactl set-sink-volume 0 -5%
 
 get_vol=$(vol); \
-dunstify  "Volume: "$get_vol -t 1000 -r 1
+notify-send  "Volume: "$get_vol -t 1000 -r 1
 
 
 
