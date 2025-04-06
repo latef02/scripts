@@ -32,8 +32,8 @@ menu() {
   printf "11. Nancy Ajram\n"
   printf "12. Fayrouz\n"
   printf "13. Music snoopy\n"
-  printf "14. Al7Aan\n"
-  printf "15. Yan Radio\n"
+  printf "14. Oum Kaltoum\n"
+  printf "15. Tarab Radio\n"
 #  printf "16. RocknRoll Radio"
 }
 
@@ -89,19 +89,19 @@ case $choice in
   6)
     pkill -f http ||echo "mpv not running."
     start_radio 'House Music' ;
-    mpv "https://zeno.fm/radio/radio-house-music/" &
+    mpv "https://stream.zeno.fm/ubrbwq17qy8uv?adtonosListenerId=01JK3W7RY6JWS0BXV50Q318067" &
     return
    ;;
   7)
     pkill -f http ||echo "mpv not running."
     start_radio 'Classical Mozart radio' ; 
-    mpv "https://zeno.fm/radio/mozart/" &
+    mpv "https://stream.klassikradio.de/mozart/mp3-192/mytuner?adtonosListenerId=01JK3W7RY6JWS0BXV50Q318067" &
     return
    ;;
   8)
     pkill -f http ||echo "mpv not running."
     start_radio 'Deep jazz Music' ;
-    mpv "https://zeno.fm/radio/jazz-radio-bcn/" &
+    mpv "https://stream.zeno.fm/vs9wvrdm7k8uv?adtonosListenerId=01JK3W7RY6JWS0BXV50Q318067" &
     return
    ;;
   9)
@@ -119,7 +119,7 @@ case $choice in
   11)
     pkill -f http ||echo "mpv not running."
     start_radio 'Nancy ajram' ;
-    mpv "https://zeno.fm/radio/nancy-ajram-radio/" &
+    mpv "https://stream.zeno.fm/eq84hb8dam8uv?adtonosListenerId=01JK3W7RY6JWS0BXV50Q318067" &
     return
     ;;
   12)
@@ -137,14 +137,14 @@ case $choice in
   14)
 	 
     pkill -f http ||echo "mpv not running."
-    start_radio 'Al7aan' ;
-    mpv "https://zeno.fm/radio/alhaan/" &
+    start_radio 'Oum Kalmtoum' ;
+    mpv "https://stream.zeno.fm/zsgrfxg71s8uv" &
     return
     ;;
   15)
     pkill -f http ||echo "mpv not running."
-    start_radio 'Yan Radio' ;
-    mpv "https://worldradiomap.com/ma/play/yanplus"
+    start_radio 'Tarab Radio' ;
+    mpv "https://stream.zeno.fm/fy8achbq97zuv"
     return
     ;;
 #  16)
