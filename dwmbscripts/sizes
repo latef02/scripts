@@ -1,0 +1,5 @@
+#!/bin/bash
+
+hard=$(df -h | grep '/home' | awk '{print $4}')
+echo "🔲: $hard"
+
